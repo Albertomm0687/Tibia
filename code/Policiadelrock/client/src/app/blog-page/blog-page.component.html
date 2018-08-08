@@ -1,0 +1,10 @@
+<h1>Blogs</h1>
+
+
+  <div class="jumbotron" *ngFor="let bl of blogList" >
+    <a [routerLink]="['/blog-page', bl._id]">
+      <h2>{{bl.band}}</h2>
+      <p>tags: {{bl.genders[0]}}</p>
+    </a>
+  </div>
+

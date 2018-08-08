@@ -1,0 +1,49 @@
+<!-- <p>
+  Bienvenido 
+</p> -->
+
+<!-- <div>
+  <h2>Escribe tu blog</h2>
+    <input [(ngModel)]="blogs.name" type="text" placeholder="Nombre de la banda o evento">
+    <br>
+    <input [(ngModel)]="blogs.desc" type="text" placeholder="Descripción">
+    <br>
+    <input [(ngModel)]="blogs.image" type="text" placeholder="Imagen">
+    <br>
+    <input placeholder="Generos, separalos con comas" [(ngModel)]="blogs.specs" type="text">
+    <br>
+    <button (click)="saveBlog(blogs)">Guardar los cambios</button>
+  </div> -->
+
+  <div class="wrapper">
+    <div class="page-header" style="background-image: url('https://wallpapercave.com/wp/1wqQkRW.jpg');">
+        <div class="filter"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mr-auto ml-auto">
+                        <div class="card card-register">
+                            <h2 class="title">Escribe tu blog</h2>
+                            
+                            <article class="register-form">
+
+                                <label>Nombre de la Banda</label>
+                                <input [(ngModel)]="blogs.band" type="text" class="form-control">
+                                <br>
+                                <label>Descripción</label>
+                                <input [(ngModel)]="blogs.desc" type="text" class="form-control">
+                                <br>
+                                <label>Imagen Url</label>
+                                <input [(ngModel)]="blogs.image" type="text" class="form-control">
+                                <br>
+                                <label>Generos</label>
+                                <input placeholder="Separalos con comas" [(ngModel)]="blogs.genders" type="text" class="form-control">
+
+                                <button class="btn btn-danger btn-block btn-round" (click)="saveBlog()">Publicar blog</button>
+                            </article>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>

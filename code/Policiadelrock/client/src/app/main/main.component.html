@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#"></a>
+  <img src="https://scontent.fmex3-1.fna.fbcdn.net/v/t1.0-9/21151470_1873628302953878_8598920947707106177_n.png?_nc_cat=0&oh=78dcbd171084938eb688991d7602b3b5&oe=5BCE7CE8" width="40" height="40" class="d-inline-block align-left" alt="">
+  <h1>Policia del rock</h1>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['']" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" [routerLink]="['signup']">Signup</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" [routerLink]="['login']">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" [routerLink]="['profile']">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" [routerLink]="['blog-page']">Blogs</a>
+      </li>
+    </ul>
+  </div>
+</nav> 
+
+<router-outlet></router-outlet>

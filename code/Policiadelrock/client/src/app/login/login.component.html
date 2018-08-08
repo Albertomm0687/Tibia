@@ -1,0 +1,36 @@
+<!-- <h2></h2>
+
+<section>
+  <input required name="email" [(ngModel)]="auth.email" placeholder="Correo Electrónico" type="text" >
+    <br>
+    <input #myPassword="ngModel" required name="auth.password" [(ngModel)]="password" placeholder="Contraseña" type="password">
+    <br>
+    <button (click)="login()">Entrar</button>
+</section> -->
+
+<div class="wrapper">
+    <div class="page-header" style="background-image: url('https://wallpapercave.com/wp/1wqQkRW.jpg');">
+        <div class="filter"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mr-auto ml-auto">
+                      <div class="card card-register">
+                         <h2 class="title">Escribe tu blog</h2>
+    
+                             <form class="register-form">
+
+                            <label>Correo Electrónico</label>
+                             <input required name="email" [(ngModel)]="auth.email" type="text" class="form-control">
+                              <br>
+                              <label>Contraseña</label>
+                              <input required name="password" [(ngModel)]="auth.password" type="password" class="form-control">
+                              <br>
+                              <button class="btn btn-danger btn-block btn-round" (click)="login()">Entrar</button>
+                            </form>
+                          </div>
+                        </div>
+                    </div>
+            </div>
+        </div>    
+</div>
+
